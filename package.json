@@ -1,0 +1,15 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/stylescss.scss:./css/stylemenu.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "images",
+  "version": "1.0.0",
+  "description": "Projet3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
