@@ -41,8 +41,6 @@ $fontfamily: cursive;
 	margin-bottom: 50px;
 }
 
-
-
 @mixin menustous{
 	border: solid 1px #d5d6d5;
     box-shadow: 0px 0px 8px 1px #a2a5a4;
@@ -181,34 +179,23 @@ nav .menu a{
 .page1 h3{
 	font-family: "kalam", cursive;
 	display: block;
-	font-size: 2em;
 	@include block;
 	font-weight: bold;
 }
 
 .fas{
-	background-color: #fcdfdb;
 	background: linear-gradient(155deg, #f05561 0%, #f6916a 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 65px;
+	margin-top: 20px;
 }
 
 .page2{
 	@include border;
 	@include flex1;
 	@include pages_menu;
-	background-color: #fff5fe;
-}
-
-.pagemenu2{
-	padding-top: 0;
-	font-family: "Croissant One", cursive, bolder;
-	background: linear-gradient(155deg, #cb802f 0%, #915cfd 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	@include block;
-	font-size: 30px;
+	background-color: #fff5fe;	
 }
 
 .page2 h2{
@@ -221,7 +208,6 @@ nav .menu a{
 }
 
 .page2 h3{
-	font-size: 2em;
 	color: #c77412;
 	font-family: "Croissant One", cursive, bolder;
 }
@@ -230,10 +216,20 @@ nav .menu a{
 	@include border;
 	@include flex1;
 	@include pages_menu;
-	background-color: #f9f9f9;	
+	background-color: #edefef;	
 }
 
-.page3 h2{
+.menu3{
+	@include border;
+	@include flex1;
+	@include pages_menu;
+	padding-bottom: 35px;
+	background-color: #edefef;
+}
+
+
+#pagemenu3{
+	padding-top: 0;
 	font-family: 'Dancing Script', cursive;
 	background: linear-gradient(155deg, #0227dc 0%, #73bcfc 100%);
     -webkit-text-fill-color: transparent;
@@ -242,9 +238,18 @@ nav .menu a{
 	font-size: 2em;
 }
 
+
+.page3 h2{
+	font-family: 'Dancing Script', cursive;
+	background: linear-gradient(155deg, #0227dc 0%, #73bcfc 100%);
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	@include block;
+	font-size: 2rem;
+}
+
 .page3 h3{
 	font-family: "kalam", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 2em;
 	color: #0887fb;
 }
 
@@ -253,6 +258,24 @@ nav .menu a{
 	@include flex1;
 	@include pages_menu;
 	background-color: #fdfffd;
+}
+
+.menu4{
+	@include border;
+	@include flex1;
+	@include pages_menu;
+	padding-bottom: 35px;
+	background-color: #edefef;
+}
+
+#pagemenu4{
+	padding-top: 0;
+	font-family: 'Dancing Script', cursive;
+	background: linear-gradient(155deg, #0227dc 0%, #73bcfc 100%);
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	@include block;
+	font-size: 28px;
 }
 
 .page4 h2{
@@ -280,21 +303,19 @@ nav a{
 
 /* Mes mixins menus */
 
-@mixin menus{
-	background-color: #fcdfdb;
-	color: $color3;	
-	font-family: "devonshire", cursive;
-}
-
 .menu1, .menu2, .menu3, .menu4{
 	@include menustous
 }
 
-.menu1{
-	@include menus
-}
+
 
 /* Corps principal du document des menus */
+
+.menu1{
+	background-color: #fcdfdb;
+	color: $color3;	
+	font-family: "devonshire", cursive;
+}
 
 #pagemenu1{
 	font-size: 32px;
@@ -310,32 +331,38 @@ nav a{
 	font-size: 2em;
 }
 
+.menu2{
+	@include border;
+	@include flex1;
+	@include pages_menu;
+	padding-bottom: 35px;
+	background-color: #fff5fe;
+}
+
+#pagemenu2{
+	padding-top: 0;
+	font-family: "Croissant One", cursive, bolder;
+	background: linear-gradient(155deg, #cb802f 0%, #915cfd 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	@include block;
+	font-size: 28px;
+}
+
 nav{
 	display: flex;
     flex-direction: column;
     align-items: stretch; 
 }
 
-.menu i{
-	font-size: 100px;
-}
-
-.menu1_entree, .menu1_plats, .menu1_desserts{
-	width: 80%;
+#Entrees, #Plats, #Desserts{
 	font-family: kalam, cursive;
-	font-size: 25px;
-}
-
-
-#prelude, #Point_dorgue, #Mouvement_final{
-	width: 75%;
+	font-size: 32px;
+	width: 100%;
 	display: flex;
     flex-direction: row;
     align-items: center;
 	justify-content: center;
-	font-family: kalam, cursive;
-	font-size: 32px;
-
 }
 
 .tarif{
@@ -344,15 +371,19 @@ nav{
     flex-wrap: wrap;
 	font-weight: bold;
 	align-content: flex-end;
-	font-size: 26px;
+	margin-right: 80px;
+	font-size: 1.5em;
 	margin-top: -25px;
 }
 
  .Designation{
+	font-size: 1.1em;
+    font-family: 'segoe print', 'Kalam', cursive;
+    margin-left: 50px;	
 	display: flex;
 	justify-content: flex-start;
-	width: 75%;	
-	font-size: 20px;
+	width: 80%;	
+
 }
 
 .fin_de_page{
