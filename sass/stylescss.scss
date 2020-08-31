@@ -109,21 +109,10 @@ $fontfamily: cursive;
     }
 }
 
-@keyframes underline {
-	0% {
-		background-size: 100% 100%;
-	}
-	50% {
-		background-size: 0 100%;
-	}
-	100% {
-		background-size: 100% 100%;
-	}
-}
 
 a:-webkit-any-link {
     color: unset;
-    cursor: unset;
+  
 	text-decoration: none;
 }
 
@@ -234,7 +223,7 @@ nav .menu a{
 }
 
 .page2 h3{
-	color: #c77412;
+	color:#cb802f;
 	font-family: "Croissant One", cursive;
 	@include block;
 	font-size: 1.8em;
@@ -298,7 +287,37 @@ nav a{
 	@include menustous
 }
 
+@mixin titrestous{
+	content: "";
+    position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;	
+}
 
+@mixin tarif{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-weight: bold;
+	align-content: flex-end;
+	margin-right: 80px;
+	font-size: 1.5em;
+	margin-top: -25px;
+}
+
+@mixin Designation{
+	font-size: 1.1em;
+    font-family: 'segoe print', 'Kalam', cursive;
+    margin-left: 50px;	
+	display: flex;
+	justify-content: flex-start;
+	width: 80%;	
+}
 
 /* Corps principal du document des menus */
 
@@ -317,11 +336,7 @@ nav a{
 }
 
 
-.menu2{
-	font-family: "Croissant One", cursive, bolder;
-	background: linear-gradient(155deg, #cb802f 0%, #915cfd 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.menu2{	
 	padding-bottom: 35px;
 	background-color: #fff5fe;
 }
@@ -346,7 +361,6 @@ nav a{
 		background: linear-gradient(155deg, #0227dc 0%, #73bcfc 100%);
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
-		@include block;
 		font-size: 4.5em;
 		margin-top: 50px
 }
@@ -384,46 +398,142 @@ nav{
 	justify-content: center;
 }
 
-#Entrees h3, #Plats h3, #Desserts h3{
-	line-height: 1.1;
+.titre1{
+	display: inline-block;
+	position: relative;
 	cursor: pointer;
-	animation: underline;
-	&hover {
-		left: 0;
-		right: 100%;
-	  }
-}	
+	&::before{
+	@include titrestous;
+	background: $color3;
+	}
+	&:hover::before{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	}
+}
+
+.titre2{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	color: #c67412;
+	&::before{
+	@include titrestous;
+	background: #c67412;
+	}
+	&:hover::before{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	}
+}
+
+.titrebis{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	color: #a56799;
+	&::before{
+	@include titrestous;
+	background: #a56799;
+	}
+	&:hover::before{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	}
+}
+
+.titreter{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	color: #6e4ccc;
+	&::before{
+	@include titrestous;
+	background: #6e4ccc;
+	}
+	&:hover::before{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	}
+}
+
+.titre3{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	&::before{
+	@include titrestous;
+	background:	#0887fb;
+	-webkit-text-fill-color: transparent;
+	}
+	&:hover::before{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	}
+}
+
+.titre4{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	&::before{
+	@include titrestous;
+	background: #72bf57;
+	-webkit-text-fill-color: transparent;
+	}
+	&:hover::before{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+	}
+}
 
 .tarif{
-	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-	font-weight: bold;
-	align-content: flex-end;
-	margin-right: 80px;
-	font-size: 1.5em;
-	margin-top: -25px;
+	@include tarif;
 }
 
- .Designation{
-	font-size: 1.1em;
-    font-family: 'segoe print', 'Kalam', cursive;
-    margin-left: 50px;	
-	display: flex;
-	justify-content: flex-start;
-	width: 80%;	
-
+.tarif1{
+	@include tarif;
+	color: #c67412;
 }
+
+
+.tarif2{
+	@include tarif;
+	color: #a56799;
+}
+
+.Designation{
+	@include Designation;
+}
+
+ .Designation1{
+	 @include Designation;
+	 color:  #c67412;
+	
+}
+
+.Designation2{
+	@include Designation;
+	color: #a56799;
+}
+
+
+.Designation3{
+	@include Designation;
+	color: #6e4ccc;
+}
+
+
+
 
 .fin_de_page{
 	display: flex;
     flex-direction: row;
     align-items: center;
 	justify-content: center;
-
 }
 
-.fin_de_page h2,{
+.fin_de_page h2{
 	font-size: 40px;
 }
 
@@ -591,7 +701,9 @@ i{
 	body{
 		border: unset;
 	}
-} 
+
+}
+
 
 
 
