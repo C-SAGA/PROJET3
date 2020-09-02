@@ -5,7 +5,6 @@ $color2: #FDCB46 ;
 $color3: #3d1319;
 $fontfamily: cursive;
 
-
 /* Mes mixins page de garde */
 
 @mixin flex{
@@ -111,8 +110,7 @@ $fontfamily: cursive;
 
 
 a:-webkit-any-link {
-    color: unset;
-  
+    color: unset; 
 	text-decoration: none;
 }
 
@@ -535,6 +533,7 @@ nav{
 
 .fin_de_page h2{
 	font-size: 40px;
+	margin-left: 12px;
 }
 
 .fin_de_page i{
@@ -602,7 +601,7 @@ nav{
 	background-color: $color1;
 	border-radius: 0.75rem;
 	font-size: 2rem;
-	width: 30%;
+	width: 25%;
 	height: 57px;
 	display: flex;
 	align-items: center;
@@ -684,13 +683,25 @@ i{
 #footer_left h3, #footer_right h3{
 	cursor: pointer;
 	&:hover{
-		animation: wiggle 190ms cubic-bezier(.4,.1,.6,.9) 2;
+		animation: wiggle 190ms cubic-bezier(.1,.4,.6,.9) 2;
 		animation: wiggle 190ms linear infinite;
 	}	
 }	
 
 
-  /* Responsive*/
+  /* Responsive */
+
+ /* Mixin Responsive */
+
+ @mixin largeur1{
+	 width: 100%;
+ }
+
+@mixin largeur1{
+	width: 85%;
+}
+ 
+
 @media all and (max-width: 800px){
     
 	html, body{
@@ -702,7 +713,40 @@ i{
 		border: unset;
 	}
 
+	main{
+		margin-left: 50px;
+	}
+
+	header{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+	}
+
+	.pages_garde{
+		width: 100%;
+		margin: auto;
+	}
+
+	.bouton-animation, .points_suspension, #titre_bouton{
+		width: 85%;
+	}
+
+	#titre_bouton{
+		font-size: 20px;
+	}
+
+	.points_suspension{
+		font-size: 10px;
+	}
+
+	ul{
+		margin-left: - 10px;
+	}
 }
+
+
+
 
 
 
