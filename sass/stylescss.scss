@@ -160,7 +160,7 @@ main{
 	@include flex2;
 	font-family: "devonshire", cursive;
 	margin-top: 50px;
-	font-size: 2em;
+
 }	
 
 nav .menu a{
@@ -193,7 +193,7 @@ nav .menu a{
 	display: block;
 	@include block;
 	font-weight: bold;
-	font-size: 1.8em;
+	font-size: 2.5em;
 }
 
 .fas{
@@ -224,7 +224,8 @@ nav .menu a{
 	color:#cb802f;
 	font-family: "Croissant One", cursive;
 	@include block;
-	font-size: 1.8em;
+	font-size: 2em;
+	
 }
 
 .page3{
@@ -247,7 +248,7 @@ nav .menu a{
 .page3 h3{
 	font-family: "kalam", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: #0887fb;
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 .page4{
@@ -267,10 +268,10 @@ nav .menu a{
 }
 
 .page4 h3{
-	font-size: 2.1em;
 	font-family: 'Shadows Into Light', cursive;
 	font-weight: bold;
 	color: #72bf57;
+	font-size: 2.5em;
 }
 
 nav a{
@@ -494,7 +495,6 @@ nav{
 	color: #c67412;
 }
 
-
 .tarif2{
 	@include tarif;
 	color: #a56799;
@@ -515,14 +515,10 @@ nav{
 	color: #a56799;
 }
 
-
 .Designation3{
 	@include Designation;
 	color: #6e4ccc;
 }
-
-
-
 
 .fin_de_page{
 	display: flex;
