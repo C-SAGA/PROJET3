@@ -673,11 +673,12 @@ i{
 
 #footer_right{
 	  margin-left: 32em;
-	  @include font;
+	  @include font;	  	
   }
 
 #footer_left h3, #footer_right h3{
 	cursor: pointer;
+
 	&:hover{
 		animation: wiggle 190ms cubic-bezier(.1,.4,.6,.9) 2;
 		animation: wiggle 190ms linear infinite;
@@ -697,7 +698,6 @@ i{
 	width: 85%;
 }
  
-
 @media all and (max-width: 800px){
     
 	html, body{
@@ -739,7 +739,17 @@ i{
 	ul{
 		margin-left: - 10px;
 	}
+	
+	#footer_right{
+	margin-left: 0;
+    font-size: 15px;
+	}	
+
+
 }
+
+
+
 
 
 
