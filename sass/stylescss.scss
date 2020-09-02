@@ -57,10 +57,7 @@ $fontfamily: cursive;
 
 @mixin block{
 	display: block;
-    margin-block-start: 0em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  
 }
 
 /* Mes polices page de garde */
@@ -745,7 +742,10 @@ i{
     font-size: 15px;
 	}	
 
-
+	#footer_left h3{
+		font-size: 15px;
+		margin-left: 0;
+	}
 }
 
 
