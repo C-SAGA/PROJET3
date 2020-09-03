@@ -114,8 +114,7 @@ body{
 	width: 100%;
 	height: 100%;
 	margin-top: 0;
-	margin-left: 0;
-	overflow: auto; 	
+	margin-left: 0;	
 	font-size: 20px;
 }
 
@@ -178,7 +177,7 @@ nav .menu a{
 }
 
 .page1 h2{
-	font-weight: 480;
+	font-weight: normal;
 	font-family: "devonshire", cursive;
 	font-size: 45px;
 	@include block;
