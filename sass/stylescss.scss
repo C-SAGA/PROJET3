@@ -708,7 +708,6 @@ i{
 	html, body{
 	   max-width: 800px;
 	   overflow-x: hidden;
-	   overflow-anchor: none;
 	} 
 	body{
 		border: unset;
@@ -734,8 +733,8 @@ i{
 	}
 
 	#titre_bouton{
-		font-size: 20px;
-		margin-left: 18px;
+		font-size: 18px;
+		margin-left: 2px;
 	}
 
 	.points_suspension{
@@ -764,10 +763,6 @@ i{
 	.menu_entree, .menu_plats, .menu_desserts{
 	width: 100%;
 	display: block;
-   	margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-	margin-inline-end: 0px;
 	text-align: left;
 	}
 	
@@ -782,7 +777,7 @@ i{
 	margin-left: 260px;
 	text-align: center;
 	font-size: 23px;
-	width: 50;
+	width: 50px;
 	}
 	
 	#pagemenu1 h2, #pagemenu2 h2{
