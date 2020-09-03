@@ -773,13 +773,17 @@ i{
 	}
 	
 	.Designation, .Designation1, .Designation2, .Designation3{
-	font-size: 1.3em;
-    margin-left: 20px;
+	font-size: 1.0em;
+	margin-left: 20px;
+	width: 240px;
 	}
 
 	.tarif, .tarif1, .tarif2{
 	margin-right: 12px;
+	margin-left: 260px;
 	text-align: center;
+	font-size: 23px;
+	width: 50;
 	}
 	
 	#pagemenu1 h2, #pagemenu2 h2{
@@ -798,9 +802,10 @@ i{
 		font-size: 23px;
 	}
 
-	#Entrees .titre2, #Plats .titre2{
+	#Entrees .titre2, #Entrees .titre3, #Entrees .titre4, #Plats .titrebis, #Plats .titre3, #Desserts .titreter, #Plats .titre3, #Plats .titre4, #Desserts .titre4{
 		width: 100%;
-		font-size: 16px;
+		font-size: 0.85em;
+		font-weight: normal;
 		}
 	
 		#Desserts .titre1{
