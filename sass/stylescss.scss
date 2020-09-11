@@ -57,6 +57,7 @@ $fontfamily: cursive;
 
 @mixin block{
 	display: block; 
+	text-align: center;
 }
 
 /* Mes polices page de garde */
@@ -109,6 +110,10 @@ a:-webkit-any-link {
 	text-decoration: none;
 }
 
+html{
+    width: fit-content;
+}
+
 body{
 	width: 100%;
 	height: 100%;
@@ -158,7 +163,11 @@ main{
 
 }	
 
-nav .menu a{
+article .menu i{
+	margin-left: 80px;
+}
+
+article .menu a{
 	transition: all 300ms ease-in-out;
 	cursor: pointer;
 	&:hover{
@@ -184,7 +193,6 @@ nav .menu a{
 
 .page1 h3{
 	font-family: "kalam", cursive;
-	display: block;
 	@include block;
 	font-weight: bold;
 	font-size: 2.5em;
@@ -196,6 +204,7 @@ nav .menu a{
 	-webkit-text-fill-color: transparent;
 	font-size: 75px;
 	margin-top: 35px;
+	
 }
 
 .page2{
@@ -218,8 +227,7 @@ nav .menu a{
 	color:#cb802f;
 	font-family: "Croissant One", cursive;
 	@include block;
-	font-size: 2em;
-	
+	font-size: 2em;	
 }
 
 .page3{
@@ -243,6 +251,7 @@ nav .menu a{
 	font-family: "kalam", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	color: #0887fb;
 	font-size: 2.5em;
+	@include block;
 }
 
 .page4{
@@ -266,6 +275,7 @@ nav .menu a{
 	font-weight: bold;
 	color: #72bf57;
 	font-size: 2.5em;
+	@include block;
 }
 
 nav a{
@@ -329,7 +339,6 @@ nav a{
 	font-size: 2em;
 }
 
-
 .menu2{	
 	padding-bottom: 35px;
 	background-color: #fff5fe;
@@ -376,7 +385,7 @@ nav a{
 }
 
 
-nav{
+article{
 	display: flex;
     flex-direction: column;
     align-items: stretch; 
@@ -626,7 +635,7 @@ ul li{
 	animation: point 0.5s linear infinite;
 	font-size: 14px;
 	border-radius: 50% 50%;
-	margin-left: 30px;
+	
 }	
 
 ul li:nth-child(1){
@@ -742,7 +751,7 @@ i{
 
 	ul{
 		display: flex;
-		margin-right: 10px;
+		margin-left: -90px;
 	}
 
 	ul li{
@@ -773,15 +782,15 @@ i{
 	.Designation, .Designation1, .Designation2, .Designation3{
 	font-size: 1.0em;
 	margin-left: 20px;
-	width: 240px;
+	width: 230px;
+	text-align: left;
 	}
 
 	.tarif, .tarif1, .tarif2{
-	margin-right: 12px;
-	margin-left: 260px;
-	text-align: center;
+	margin-right: 0px;
+	margin-left: 270px;
+	text-align: right;
 	font-size: 23px;
-	width: 30px;
 	}
 	
 	#pagemenu1 h2, #pagemenu2 h2{
@@ -809,9 +818,6 @@ i{
 		#Desserts .titre1{
 			font-size: 23px;
 		}
-
-
-
 }
 
 
