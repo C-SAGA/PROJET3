@@ -300,8 +300,6 @@ article a {
 
 /* Corps principal du document des menus */
 .header {
-  display: -webkit-box;
-   display: -moz-box;
   display: flex;
 }
 
@@ -782,7 +780,6 @@ i {
   html, body {
     max-width: 800px;
     overflow-x: hidden;
-    overflow-anchor: none;
   }
 
   body {
